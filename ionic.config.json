@@ -1,0 +1,7 @@
+{
+  "name": "IonicPeliculas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
