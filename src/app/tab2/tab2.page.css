@@ -1,0 +1,24 @@
+.imagen {
+  height: 30%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.botonReg {
+  width: 20px;
+}
+
+ion-toolbar {
+  background: var(--ion-color-mycolor);
+  color: var(--ion-color-mycolor-contrast);
+}
+/*# sourceMappingURL=tab2.page.css.map */

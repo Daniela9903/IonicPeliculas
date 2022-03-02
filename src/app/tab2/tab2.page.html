@@ -1,17 +1,43 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar  color="tertiary">
     <ion-title>
-      Tab 2
+      Listado
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content color="secondary">
+  
+  <div class="col-9 slideImagenes mt-3"> 
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <img  class="imagenSlide" src="./assets/img/avatar.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img  class="imagenSlide" src="./assets/img/joker.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img  class="imagenSlide" src="./assets/img/kong.jpg">
+      </ion-slide>
+      
+    </ion-slides>
+  </div>
+  
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="col-9 lista">
+    <img  class="imagen" src="./assets/img/camara.png">
+    <ion-list class="mt-5">
+      <ion-item color="primary" class="encabezado">
+        <ion-label>Listado de peliculas</ion-label>
+       </ion-item>
+
+       
+      <ion-item *ngFor="let mensaje of mensajes">
+       {{mensaje.nombre_pelicula}}
+      </ion-item>
+     </ion-list>
+ 
+    </div>
+
+  
 </ion-content>
