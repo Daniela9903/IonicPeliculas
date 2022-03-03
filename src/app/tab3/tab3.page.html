@@ -11,8 +11,8 @@
 
   <img  class="imagen" src="./assets/img/palomitas.png">
 
-  <form class="mt-5 col-11 formulario">
-    
+  <!-- <form [formGroup]="formulario" (ngSubmit)="Guardar()"  class="mt-5 col-11 formulario">
+
     <ion-item color="success" class="mt-5">
       <ion-label >Nombre de la peliula:</ion-label>
       <ion-input type="text" name="title"></ion-input>
@@ -24,7 +24,7 @@
     </ion-item>
     <ion-item color="success">
       <ion-label>Genero:</ion-label>
-      <ion-input name="description"></ion-input>
+      <ion-input name="description" formControlName="genero"></ion-input>
     </ion-item>
 
     <ion-item color="success">
@@ -40,5 +40,5 @@
     <ion-button type="submit" class="botonGuardar col-5 mt-5" shape="round" fill="outline">Guardar</ion-button>
   </form>
   
- 
+  -->
 </ion-content>
